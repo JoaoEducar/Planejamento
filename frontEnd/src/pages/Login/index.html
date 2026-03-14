@@ -1,0 +1,38 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <form class="card" id="loginForm">
+        <h2 class="title">Login</h2>
+
+        <div class="groupFormMargin">
+          <div class="inputGroup">
+            <label for="email-input" class="label">Usuário</label>
+            <input type="email" class="inputLogin" id="email-input" required />
+          </div>
+
+          <div class="inputGroup">
+            <label for="password-input" class="label">Senha</label>
+            <input
+              type="password"
+              class="inputLogin"
+              id="password-input"
+              required
+            />
+          </div>
+
+          <button type="submit" class="buttonForm">Entrar</button>
+        </div>
+
+        <div id="error-message" style="color: red; margin-top: 10px;"></div>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

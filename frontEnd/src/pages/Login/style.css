@@ -1,0 +1,102 @@
+:root {
+    --gradiente-verde: linear-gradient(135deg, #14d932 0%, #55cd4a 100%);
+    --verde-vermelho-amarelo: linear-gradient(135deg, #08a322 0% 33.3%, #c70a0a 33.3% 66.6%, #e8fc05 66.6% 100%);
+    --font-poppins: 'Poppins', 'Arial', sans-serif; 
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--verde-vermelho-amarelo);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.348); 
+    
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* Aqui para caso a gente quiser compatibilidade no safari */
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    width: 350px;
+    height: 420px;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Arial', sans-serif;
+}
+
+.groupFormMargin {
+    margin-top: 25px;
+}
+
+.inputGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400; 
+}
+
+.inputLogin {
+    padding: 10px 15px;
+    border: 2px solid #0dc40a;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.inputLogin:hover {
+    border-color: #ff4108;
+}
+
+.inputLogin:focus {
+    border-color: #fcb93c;
+}
+
+.buttonForm {
+    background: var(--gradiente-verde);
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.buttonForm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(248, 171, 5, 0.3);
+}
+
+.buttonForm:active {
+    transform: translateY(0);
+}
